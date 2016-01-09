@@ -17,10 +17,15 @@ GOTO End
 
 :Download
 wget -w 3 https://github.com/ViroRepo/ninite-silent/raw/master/Exe-Originals/ninite.exe --no-check-certificate --no-proxy
+wget -w 3 https://github.com/ViroRepo/ninite-silent/raw/master/Bat-Originals/cleanup.bat
 Goto Install
 
 :Install
 ninite.exe
+Goto Cleanup
+
+:Cleanup
+cleanup.bat
 Goto EXIT
 
 :EXIT

@@ -24,5 +24,4 @@ ninite.exe
 Goto EXIT
 
 :EXIT
-pause
 exit
